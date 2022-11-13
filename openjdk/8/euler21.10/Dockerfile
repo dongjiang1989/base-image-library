@@ -20,7 +20,7 @@ ENV PATH $JAVA_HOME/bin:$PATH
 # Default to UTF-8 file.encoding
 ENV LANG en_US.UTF-8
 
-ENV JAVA_VERSION 1.8.0_8u351
+ENV JAVA_VERSION 1.8.0_8u341
 
 RUN set -eux; \
 	\
@@ -30,7 +30,7 @@ RUN set -eux; \
 			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u351-linux-x64.tar.gz'; \
 			;; \
 		'aarch64') \
-			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u351-linux-aarch64.tar.gz'; \
+			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u341-linux-aarch64.tar.gz'; \
 			;; \
 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; \
 	esac; \
