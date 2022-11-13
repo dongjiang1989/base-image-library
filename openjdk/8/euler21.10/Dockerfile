@@ -27,7 +27,7 @@ RUN set -eux; \
     arch="$(arch)"; arch="${arch##*-}"; \
 	case "$arch" in \
 		'x86_64') \
-			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u351-linux-x64.tar.gz'; \
+			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u341-linux-x64.tar.gz'; \
 			;; \
 		'aarch64') \
 			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u341-linux-aarch64.tar.gz'; \
