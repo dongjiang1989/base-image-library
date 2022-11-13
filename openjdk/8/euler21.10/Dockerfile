@@ -6,13 +6,13 @@
 
 FROM dongjiang1989/bc-oe:21.10
 
-RUN set -eux; \
+#RUN set -eux; \
 # https://unix.stackexchange.com/a/477127/153467
-	yum install -y --nogpgcheck \
-		gzip \
-		tar \
-	; \
-	rm -rf /var/cache/yum
+#	yum install -y --nogpgcheck \
+#		gzip \
+#		tar \
+#	; \
+#	rm -rf /var/cache/yum
 
 ENV JAVA_HOME /usr/java/openjdk-8
 ENV PATH $JAVA_HOME/bin:$PATH
