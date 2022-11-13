@@ -50,11 +50,6 @@ RUN set -eux; \
 	\
 	ln -sfT "$JAVA_HOME" /usr/java/default; \
 	ln -sfT "$JAVA_HOME" /usr/java/latest; \
-	for bin in "$JAVA_HOME/bin/"*; do \
-		base="$(basename "$bin")"; \
-		[ ! -e "/usr/bin/$base" ]; \
-		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; \
-	done; \
 	\
 	javac -version; \
 	java -version
