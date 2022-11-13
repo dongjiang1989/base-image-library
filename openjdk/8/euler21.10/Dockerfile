@@ -8,11 +8,9 @@ FROM dongjiang1989/bc-oe:21.10
 
 RUN set -eux; \
 # https://unix.stackexchange.com/a/477127/153467
-	yum install -y --setopt=skip_missing_names_on_install=False --nogpgcheck \
+	yum install -y --nogpgcheck \
 		gzip \
 		tar \
-		binutils \
-		freetype fontconfig \
 	; \
 	rm -rf /var/cache/yum
 
