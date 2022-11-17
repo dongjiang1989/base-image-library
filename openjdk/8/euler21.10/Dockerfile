@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM dongjiang1989/bc-oe:21.10
+FROM openeuler/openeuler:21.09
 
 #RUN set -eux; \
 # https://unix.stackexchange.com/a/477127/153467
@@ -20,17 +20,17 @@ ENV PATH $JAVA_HOME/bin:$PATH
 # Default to UTF-8 file.encoding
 ENV LANG en_US.UTF-8
 
-ENV JAVA_VERSION 1.8.0_8u341
+ENV JAVA_VERSION 1.8.0_8u351
 
 RUN set -eux; \
 	\
     arch="$(arch)"; arch="${arch##*-}"; \
 	case "$arch" in \
 		'x86_64') \
-			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u341-linux-x64.tar.gz'; \
+			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u351-linux-x64.tar.gz'; \
 			;; \
 		'aarch64') \
-			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u341-linux-aarch64.tar.gz'; \
+			downloadUrl='https://package-1257912602.cos.ap-beijing.myqcloud.com/jdk-8u351-linux-aarch64.tar.gz'; \
 			;; \
 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; \
 	esac; \
