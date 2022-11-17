@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM openeuler/openeuler:21.09
+FROM dongjiang1989/bc-oe:21.10
 
 RUN set -eux; \
 # https://unix.stackexchange.com/a/477127/153467
