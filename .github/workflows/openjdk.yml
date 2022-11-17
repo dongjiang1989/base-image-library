@@ -20,8 +20,8 @@ jobs:
       matrix:
         include:
           -
-            name: openjdk-1.8.0_351-jdk-openeuler21.09
-            image: dongjiang1989/openeuler21.09
+            name: openjdk-1.8.0_351-jdk-openeuler21.10
+            image: dongjiang1989/bcoe21.10
             file: ./openjdk/8/euler21.10/Dockerfile
             platforms: linux/amd64,linux/arm64
     steps:
